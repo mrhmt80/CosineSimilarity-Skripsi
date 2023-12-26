@@ -1,0 +1,145 @@
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Search</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Search</h1>-->
+<!--    <form action="/search" method="POST">-->
+<!--        <label for="query">Enter your query:</label>-->
+<!--        <input type="text" id="query" name="query" required>-->
+<!--        <label for="weight">Select a weight:</label>-->
+<!--        <select id="weight" name="weight">-->
+
+<!--            <option value="0.6">0.6</option>-->
+<!--            <option value="0.7">0.7</option>-->
+<!--            <option value="0.8">0.8</option>-->
+<!--            <option value="0.9">0.9</option>-->
+
+<!--        </select>-->
+<!--        <input type="submit" value="Search">-->
+<!--    </form>-->
+<!--    <p>Current date and time: {{ datetime }}</p>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thesis Search</title>
+    <!-- Include Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{background: #eee}.news{width: 160px}.news-scroll a{text-decoration: none}.dot{height: 6px;width: 6px;margin-left: 3px;margin-right: 3px;margin-top: 2px !important;background-color: rgb(207,23,23);border-radius: 50%;display: inline-block}
+    </style>
+</head>
+
+<body>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+                <div class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-1 news"><span class="d-flex align-items-center">&nbsp;UPDATE BERITA</span></div>
+                <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+                    <a href="#">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </a>
+                    <span class="dot"></span>
+                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut </a>
+                    <span class="dot"></span>
+                    <a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse </a>
+                </marquee>
+            </div>
+        </div>
+    </div>
+</div><br>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <img src="https://unisbablitar.ac.id/wp-content/uploads/2023/05/logo-universitas-islam-balitar-unisba-blitar-100x100-1.png" alt="" width="100" height="100">
+        </div>
+        <div class="col text-center">
+            <img src="https://i.ibb.co/4MjH7dJ/unnamed-removebg-preview.png" alt="FTI Unisba" width="100" height="100">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<center>
+    <h1>Mesin Pencari Kemiripan Skripsi Algoritma Cosine Similarity</h1>
+    <br>
+    <!--    <div class="alert alert-warning" role="alert">-->
+    <!--        Silahkan Masukkan Judul Skripsi-->
+    <!-- </div>-->
+</center>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Search</h1>
+                <form action="/search" method="POST">
+                    <div class="form-group">
+                        <label for="query">Masukkan Judul Skripsi:</label>
+                        <input type="text" id="query" name="query" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Select a weight:</label>
+                        <select id="weight" name="weight" class="form-control">
+
+                            <option value="0.9">0.9</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<center>
+    <p>Waktu Akses {{ datetime }}</p>
+</center>
+
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>&ndash;&gt;-->
+<!--&lt;!&ndash;<html>&ndash;&gt;-->
+<!--&lt;!&ndash;<head>&ndash;&gt;-->
+<!--&lt;!&ndash;    <title>Cosine Similarity Calculator</title>&ndash;&gt;-->
+<!--&lt;!&ndash;</head>&ndash;&gt;-->
+<!--&lt;!&ndash;<body>&ndash;&gt;-->
+<!--&lt;!&ndash;    <h1>Cosine Similarity Calculator</h1>&ndash;&gt;-->
+<!--&lt;!&ndash;    <form action="/calculate_similarity" method="post">&ndash;&gt;-->
+<!--&lt;!&ndash;        <label for="doc1">Document 1:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <textarea id="doc1" name="doc1" rows="4" cols="50"></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;        <br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <label for="doc2">Document 2:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <textarea id="doc2" name="doc2" rows="4" cols="50"></textarea>&ndash;&gt;-->
+<!--&lt;!&ndash;        <br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <label for="weight">Select Weight:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;        <select id="weight" name="weight">&ndash;&gt;-->
+<!--&lt;!&ndash;            <option value="0.6">0.6</option>&ndash;&gt;-->
+<!--&lt;!&ndash;            <option value="0.7">0.7</option>&ndash;&gt;-->
+<!--&lt;!&ndash;            <option value="0.8">0.8</option>&ndash;&gt;-->
+<!--&lt;!&ndash;            <option value="0.9">0.9</option>&ndash;&gt;-->
+<!--&lt;!&ndash;        </select>&ndash;&gt;-->
+<!--&lt;!&ndash;        <br>&ndash;&gt;-->
+<!--&lt;!&ndash;        <input type="submit" value="Calculate Similarity">&ndash;&gt;-->
+<!--&lt;!&ndash;    </form>&ndash;&gt;-->
+<!--&lt;!&ndash;</body>&ndash;&gt;-->
+<!--&lt;!&ndash;</html>&ndash;&gt;-->
+

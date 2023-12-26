@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+        .result-container {
+            margin-top: 20px;
+        }
+        .result {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .result h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <p>Query: {{ query }}</p>
+    <p>Selected Weight: {{ selected_weight }}</p>
+    <p>Processing Time: {{ processing_time }} seconds</p>
+
+    <h2>Top 5 Similar Titles:</h2>
+    <div class="result-container">
+        {% for title, similarity_score, weight in similarity_scores %}
+            <div class="result">
+                <h2>{{ title }}</h2>
+                <p>Similarity Score: {{ similarity_score }}</p>
+                <p>Weight Used: {{ weight }}</p>
+<!--                <p>Precision: {{ precision }}</p>-->
+            </div>
+        {% endfor %}
+    </div>
+
+    <a href="/">Back to Search</a>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Cosine Similarity Result</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Cosine Similarity Result</h1>-->
+<!--    <p>The cosine similarity between the two documents is: {{ similarity }}</p>-->
+<!--    <a href="/">Back to Calculator</a>-->
+<!--</body>-->
+<!--</html>-->
+
+
